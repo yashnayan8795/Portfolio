@@ -1,0 +1,251 @@
+@import "../../vars.css";
+
+.container {
+  position: relative;
+  background-color: rgba(23, 31, 36, 0.6);
+  border-radius: 15px;
+  padding: 73px;
+  margin-top: 50px; /* Adjust as needed */
+  z-index: 1;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.title {
+  color: var(--color-text);
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+  text-align: center; /* Center the title */
+  margin-bottom: 20px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row; /* Adjust to column */
+  align-items: center; /* Center items */
+  gap: 50px; /* Increase gap between the main image and the list items */
+}
+
+.certificationItems {
+  color: var(--color-text);
+  list-style: none;
+  padding: 0;
+  flex-direction: column;
+  margin: 0;
+}
+
+.certificationItem {
+  display: flex;
+  flex-direction: row; /* Display items in a row */
+  align-items: center;
+  gap: 20px; /* Adjust spacing between text and image */
+  padding: 20px;
+  border-radius: 20px;
+  background-image: linear-gradient(
+    90deg,
+    rgba(165, 215, 232, 0.42) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: 0.4s;
+}
+
+.certificationItem:hover {
+  background-size: 100% 100%;
+}
+
+.certificationItemText {
+  flex: 1; /* Take remaining space */
+}
+
+.certificationItemText h3 {
+  font-size: 25px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.certificationItemText .issuer {
+  font-size: 20px;
+  color: #777;
+  margin-top: 5px;
+}
+
+.certificationItemText .date {
+  font-size: 18px;
+  color: #aaa;
+  margin-top: 5px;
+}
+
+.certificationImage {
+  width: 80px; /* Adjust image width */
+  height: 80px; /* Adjust image height */
+  border-radius: 50%; /* Circular image */
+}
+
+.aboutImage {
+  margin-left: 80px; /* Adjust as needed */
+}
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 50px; /* Adjust padding for medium screens */
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .title {
+    font-size: 32px; /* Adjust title font size */
+  }
+
+  .certificationItemText h3 {
+    font-size: 22px; /* Adjust certification title size */
+  }
+
+  .certificationItemText .issuer {
+    font-size: 18px; /* Adjust issuer font size */
+  }
+
+  .certificationItemText .date {
+    font-size: 16px; /* Adjust date font size */
+  }
+
+  .certificationImage {
+    width: 70px; /* Adjust image width */
+    height: 70px; /* Adjust image height */
+  }
+
+  .aboutImage {
+    margin-left: 50px; /* Adjust margin */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 40px; /* Reduce padding for smaller screens */
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .title {
+    font-size: 30px; /* Decrease title font size */
+  }
+
+  .content {
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px; /* Adjust gap between items */
+  }
+
+  .certificationItem {
+    padding: 15px; /* Adjust padding */
+  }
+
+  .certificationItemText h3 {
+    font-size: 20px; /* Adjust certification title size */
+  }
+
+  .certificationItemText .issuer {
+    font-size: 16px; /* Adjust issuer font size */
+  }
+
+  .certificationItemText .date {
+    font-size: 14px; /* Adjust date font size */
+  }
+
+  .certificationImage {
+    width: 60px; /* Adjust image width */
+    height: 60px; /* Adjust image height */
+  }
+
+  .aboutImage {
+    margin-left: 5px; /* Adjust as needed */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 30px; /* Further reduce padding for very small screens */
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .title {
+    font-size: 28px; /* Decrease title font size further */
+  }
+
+  .content {
+    flex-direction: column; /* Stack items vertically */
+    gap: 15px; /* Adjust gap between items */
+  }
+
+  .certificationItem {
+    padding: 10px; /* Further adjust padding */
+  }
+
+  .certificationItemText h3 {
+    font-size: 18px; /* Adjust certification title size */
+  }
+
+  .certificationItemText .issuer {
+    font-size: 14px; /* Adjust issuer font size */
+  }
+
+  .certificationItemText .date {
+    font-size: 12px; /* Adjust date font size */
+  }
+
+  .certificationImage {
+    width: 50px; /* Further adjust image width */
+    height: 50px; /* Further adjust image height */
+  }
+
+  .aboutImage {
+    margin-left: 0; /* Remove margin for very small screens */
+  }
+}
+
+/* Media Query for iPad Air Dimensions */
+@media screen and (max-width: 820px) {
+  .container {
+    padding: 30px; /* Adjust padding for medium screens */
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .title {
+    font-size: 32px; /* Adjust title font size */
+  }
+
+  .content {
+    flex-direction: column; /* Stack items vertically */
+    gap: 30px; /* Adjust gap for vertical stacking */
+  }
+
+  .certificationItem {
+    padding: 15px; /* Adjust padding */
+  }
+
+  .certificationItemText h3 {
+    font-size: 22px; /* Adjust certification title size */
+  }
+
+  .certificationItemText .issuer {
+    font-size: 18px; /* Adjust issuer font size */
+  }
+
+  .certificationItemText .date {
+    font-size: 16px; /* Adjust date font size */
+  }
+
+  .certificationImage {
+    width: 70px; /* Adjust image width */
+    height: 70px; /* Adjust image height */
+  }
+
+  .aboutImage {
+    margin: 0px; /* Adjust margin */
+  }
+}

@@ -1,0 +1,22 @@
+[
+    {
+      "title": "VScode",
+      "imageSrc": "skills/vscode.png"
+    },
+    {
+      "title": "PyCharm",
+      "imageSrc": "skills/pycharm.png"
+    },
+    {
+        "title": "JupyterNotebook",
+        "imageSrc": "skills/Jupyter.png"
+    },
+    {
+        "title": "Eclipse",
+        "imageSrc": "skills/ecllipse.png"
+    },
+    {
+        "title": "GitHub",
+        "imageSrc": "skills/github.png"
+    }
+]

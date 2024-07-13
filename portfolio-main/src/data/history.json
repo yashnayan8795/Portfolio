@@ -1,0 +1,26 @@
+[  
+  {
+    "role": "Frontend Developer",
+    "organisation": "JURIDENT",
+    "startDate": "Jan, 2024",
+    "endDate": "Mar 2024",
+    "experiences": ["Worked on optimizing website performance, reducing load times ", "increasing user engagement"],
+    "imageSrc": "history/valasco.jpg"
+  },
+  {
+    "role": " AWS Software Engineer",
+    "organisation": "Tangent Cloud",
+    "startDate": "June, 2024",
+    "endDate": "July, 2024",
+    "experiences": ["Worked on AWS-CLOUD services ", "integrated with the exiting services of the tangent cloud"],
+    "imageSrc": "history/tangent_cloud.jpeg"
+  },
+  {
+    "role": "Python Programmer",
+    "organisation": "Oasis Infobytes",
+    "startDate": "July, 2021",
+    "endDate": "Present",
+    "experiences": ["Worked on basic algorithm modification", "made the GUI more user-Friendly"],
+    "imageSrc": "history/oasis_icon.jpeg"
+  }
+]

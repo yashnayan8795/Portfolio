@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Portfolio",
+    "imageSrc": "projects/portfolio.png",
+    "description": "This is a project made to learn the latest languages by building an app.",
+    "skills": ["React", "JavaScript","Vite"],
+    "demo": "#",
+    "source": "https://www.github.com"
+  },
+  {
+    "title": "Iothinic",
+    "imageSrc": "projects/iothinic.png",
+    "description": " It is the Iothinic website made by the web team for the Gravitas'24 event 'Iothon'",
+    "skills": ["React", "JavaScript","SCSS","MongoDB"],
+    "demo": "https://iothinc.in/",
+    "source": "https://github.com/AaronMathew11/Iothinc_Website.git"
+  },
+  {
+    "title": "GPT-3",
+    "imageSrc": "projects/gpt3.png",
+    "description": "Introducing you to the world of Generative Pre-Trained Transformer (GPT) Technology",
+    "skills": ["React", "JavaScript","Vite"],
+    "demo": "https://github.com/yashnayan8795/GPT-3.git",
+    "source": "https://github.com/yashnayan8795/GPT-3.git"
+  },
+  {
+    "title": "Stockify",
+    "imageSrc": "projects/stockify.png",
+    "description": "This is a project made to learn the latest languages by building an app.",
+    "skills": ["Python", "HTML", "JavaScript"],
+    "demo": "https://github.com/yashnayan8795/stock_tracker.git",
+    "source": "https://github.com/yashnayan8795/stock_tracker.git"
+  },
+  {
+    "title": "Chatbot",
+    "imageSrc": "projects/project.png",
+    "description": "This is a project made to learn the latest languages by building an app.",
+    "skills": ["Python", "HTML", "JavaScript"],
+    "demo": "https://www.example.com",
+    "source": "https://www.github.com"
+  },
+  {
+    "title": "Amazon-Clone",
+    "imageSrc": "projects/amazon1.png",
+    "description": "This is a project made to learn the latest languages by building an app.",
+    "skills": ["React","TypeScript", "Express", "Next", "MongoDB"],
+    "demo": "https://www.example.com",
+    "source": "https://github.com/yashnayan8795/Amazon-clone.git"
+  }
+]

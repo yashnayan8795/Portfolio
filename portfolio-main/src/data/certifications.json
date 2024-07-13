@@ -1,0 +1,26 @@
+[
+    {
+      "title": "The Complete 2024 Web Development Bootcamp",
+      "issuer": "Udemy",
+      "date": "June 2024",
+      "imageSrc": "certifications/Udemy_icon.png"
+    },
+    {
+      "title": "Microsoft Azure AI Fundamentals[AI-900]",
+      "issuer": "Microsoft",
+      "date": "July 2024",
+      "imageSrc": "certifications/ai900.png"
+    },
+    {
+      "title": "Microsoft Azure Data Fundamentals[DP-900]",
+      "issuer": "Microsoft",
+      "date": "July 2024",
+      "imageSrc": "certifications/dp900.png"
+    },
+    {
+      "title": "Forest and Their Management",
+      "issuer": "NPTEL",
+      "date": "April 2024",
+      "imageSrc": "certifications/nptel.png"
+    }
+]  
