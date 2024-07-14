@@ -35,6 +35,11 @@ To customize the styles:
   1. Open the CSS files in the `src/styles` directory.
   2. Modify the CSS variables in the `vars.css` file to change colors, fonts, and other styles.
 
+## ScreenShot
+
+<img width="891" alt="portfolio" src="https://github.com/user-attachments/assets/c143b4d8-1023-4b43-a08c-faada71d912e">
+
+
 
 ## Contributing
 Contributions are welcome! If you have any improvements or suggestions, feel free to open a pull request or issue.
