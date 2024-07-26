@@ -61,6 +61,6 @@ Feel free to reach out with any questions or feedback!
 
 **Author**: [Yash Nayan](https://github.com/yashnayan8795)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/d82e831a-34a2-4ea5-b9e6-e3ba0c74048f/deploy-status?branch=main)](https://app.netlify.com/sites/yashnayan-portfolio/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d82e831a-34a2-4ea5-b9e6-e3ba0c74048f/deploy-status?branch=main)](https://app.netlify.com/sites/yash-nayan-portfolio/deploys)
 
 
