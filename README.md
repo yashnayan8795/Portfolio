@@ -37,7 +37,9 @@ To customize the styles:
 
 ## ScreenShot
 
-<img width="891" alt="portfolio" src="https://github.com/user-attachments/assets/c143b4d8-1023-4b43-a08c-faada71d912e">
+![image](https://github.com/user-attachments/assets/16af556c-37ae-4f5c-b51d-a4b1382d150b)
+
+<img width="861" alt="image" src="https://github.com/user-attachments/assets/2db868d2-b70e-4809-b2cb-e0fe2cfe2fcf">
 
 
 
