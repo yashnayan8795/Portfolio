@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-
+import { motion, AnimatePresence } from "framer-motion";
 import styles from "./Navbar.module.css";
 import { getImageUrl } from "../../utils";
+import config from "../../data/config.json";
 
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -9,19 +10,25 @@ export const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <a className={styles.title} href="/">
-        Yash Nayan
+        {config.name}
       </a>
       <div className={styles.menu}>
-        <img
+        <button
           className={styles.menuBtn}
-          src={
-            menuOpen
-              ? getImageUrl("nav/closeIcon.png")
-              : getImageUrl("nav/menuIcon.png")
-          }
-          alt="menu-button"
+          aria-label="Toggle menu"
+          aria-expanded={menuOpen}
           onClick={() => setMenuOpen(!menuOpen)}
-        />
+        >
+          <img
+            src={
+              menuOpen
+                ? getImageUrl("nav/closeIcon.png")
+                : getImageUrl("nav/menuIcon.png")
+            }
+            alt=""
+          />
+        </button>
+        
         <ul
           className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}
           onClick={() => setMenuOpen(false)}

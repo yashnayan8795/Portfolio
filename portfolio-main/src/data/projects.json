@@ -1,50 +1,50 @@
 [
   {
-    "title": "Portfolio",
+    "title": "Professional Portfolio",
     "imageSrc": "projects/portfolio.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "JavaScript","Vite"],
-    "demo": "#",
-    "source": "https://www.github.com"
+    "description": "A modern, high-performance portfolio website built with React 19, Vite 8, and Framer Motion for smooth animations and a premium UX.",
+    "skills": ["React 19", "Vite 8", "Framer Motion", "CSS Modules"],
+    "demo": "https://yash-nayan-portfolio.netlify.app/",
+    "source": "https://github.com/yashnayan8795/Portfolio"
   },
   {
     "title": "Iothinic",
     "imageSrc": "projects/iothinic.png",
-    "description": " It is the Iothinic website made by the web team for the Gravitas'24 event 'Iothon'",
+    "description": "Official website for the Iothinic club, showcasing events and member contributions with a robust React-based frontend.",
     "skills": ["React", "JavaScript","SCSS","MongoDB"],
     "demo": "https://iothinc.in/",
     "source": "https://github.com/AaronMathew11/Iothinc_Website.git"
   },
   {
-    "title": "GPT-3",
+    "title": "GPT-3 UI/UX",
     "imageSrc": "projects/gpt3.png",
-    "description": "Introducing you to the world of Generative Pre-Trained Transformer (GPT) Technology",
-    "skills": ["React", "JavaScript","Vite"],
+    "description": "A fully responsive landing page for a GPT-3 concept, focusing on high-end design aesthetics and interactive elements.",
+    "skills": ["React", "JavaScript","Vite", "BEM"],
     "demo": "https://github.com/yashnayan8795/GPT-3.git",
     "source": "https://github.com/yashnayan8795/GPT-3.git"
   },
   {
     "title": "Stockify",
     "imageSrc": "projects/stockify.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["Python", "HTML", "JavaScript"],
+    "description": "Real-time stock tracking application with personalized watchlists and data visualization using Python and modern web technologies.",
+    "skills": ["Python", "Flask", "JavaScript", "ApexCharts"],
     "demo": "https://github.com/yashnayan8795/stock_tracker.git",
     "source": "https://github.com/yashnayan8795/stock_tracker.git"
   },
   {
-    "title": "Chatbot",
+    "title": "AI Chatbot",
     "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["Python", "HTML", "JavaScript"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "description": "Intelligent chatbot interface with natural language processing capabilities, providing seamless user interactions and automated assistance.",
+    "skills": ["Python", "Natural Language Processing", "React"],
+    "demo": "https://github.com/yashnayan8795",
+    "source": "https://github.com/yashnayan8795"
   },
   {
-    "title": "Amazon-Clone",
+    "title": "Amazon Clone",
     "imageSrc": "projects/amazon1.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React","TypeScript", "Express", "Next", "MongoDB"],
-    "demo": "https://www.example.com",
+    "description": "Full-stack e-commerce platform clone featuring user authentication, product management, and a secure checkout process.",
+    "skills": ["Next.js", "TypeScript", "Tailwind CSS", "Stripe"],
+    "demo": "https://github.com/yashnayan8795/Amazon-clone.git",
     "source": "https://github.com/yashnayan8795/Amazon-clone.git"
   }
 ]

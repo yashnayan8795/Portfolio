@@ -1,5 +1,5 @@
 import React from "react";
-
+import { motion } from "framer-motion";
 import styles from "./ProjectCard.module.css";
 import { getImageUrl } from "../../utils";
 
@@ -7,11 +7,16 @@ export const ProjectCard = ({
   project: { title, imageSrc, description, skills, demo, source },
 }) => {
   return (
-    <div className={styles.container}>
+    <motion.div 
+      className={styles.container}
+      whileHover={{ y: -10 }}
+      transition={{ type: "spring", stiffness: 300 }}
+    >
       <img
         src={getImageUrl(imageSrc)}
-        alt={`Image of ${title}`}
+        alt={`Preview of ${title}`}
         className={styles.image}
+        loading="lazy"
       />
       <h3 className={styles.title}>{title}</h3>
       <p className={styles.description}>{description}</p>
@@ -25,13 +30,23 @@ export const ProjectCard = ({
         })}
       </ul>
       <div className={styles.links}>
-        <a href={demo} className={styles.link}>
+        <a 
+          href={demo} 
+          className={styles.link}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Demo
         </a>
-        <a href={source} className={styles.link}>
+        <a 
+          href={source} 
+          className={styles.link}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Source
         </a>
       </div>
-    </div>
+    </motion.div>
   );
 };

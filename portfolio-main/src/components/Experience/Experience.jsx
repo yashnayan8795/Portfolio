@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import styles from "./Experience.module.css";
 import skills from "../../data/skills.json";
 import history from "../../data/history.json";
@@ -11,24 +12,33 @@ export const Experience = () => {
       <h2 className={styles.title}>My Skills & Experience</h2>
       
       <div className={styles.skillsSection}>
-        
         <div className={styles.skills}>
           {skills.map((skill, id) => (
-            <div key={id} className={styles.skill}>
+            <motion.div 
+              key={id} 
+              className={styles.skill}
+              whileHover={{ scale: 1.1 }}
+            >
               <div className={styles.skillImageContainer}>
                 <img src={getImageUrl(skill.imageSrc)} alt={skill.title} />
               </div>
               <p>{skill.title}</p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
 
       <div className={styles.experiencesSection}>
-        
         <ul className={styles.history}>
           {history.map((historyItem, id) => (
-            <li key={id} className={styles.historyItem}>
+            <motion.li 
+              key={id} 
+              className={styles.historyItem}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: id * 0.1 }}
+            >
               <img
                 src={getImageUrl(historyItem.imageSrc)}
                 alt={`${historyItem.organisation} Logo`}
@@ -42,7 +52,7 @@ export const Experience = () => {
                   ))}
                 </ul>
               </div>
-            </li>
+            </motion.li>
           ))}
         </ul>
       </div>
@@ -51,12 +61,16 @@ export const Experience = () => {
         <h3 className={styles.sectionTitle}>Tools I Use</h3>
         <div className={styles.tools}>
           {tools.map((tool, id) => (
-            <div key={id} className={styles.tool}>
+            <motion.div 
+              key={id} 
+              className={styles.tool}
+              whileHover={{ scale: 1.1 }}
+            >
               <div className={styles.toolImageContainer}>
                 <img src={getImageUrl(tool.imageSrc)} alt={tool.title} />
               </div>
               <p>{tool.title}</p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

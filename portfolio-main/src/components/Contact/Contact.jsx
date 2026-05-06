@@ -1,24 +1,38 @@
 import React from "react";
 import styles from "./Contact.module.css";
 import { getImageUrl } from "../../utils";
+import config from "../../data/config.json";
 
 export const Contact = () => {
   return (
     <footer id="contact" className={styles.container}>
       <div className={styles.text}>
         <h3>Feel free to reach out!</h3>
-        <p>Designed by Yash Nayan</p>
-        <h4>Copyright © 2024</h4>
-        <h4>Download my <a href="https://drive.google.com/file/d/1togQ__-Rd8rRKc2gsf2VceAbmZG3S4FJ/view?usp=sharing">Resume</a> </h4>
+        <p>Designed by {config.name}</p>
+        <h4>Copyright © {new Date().getFullYear()}</h4>
+        <h4>
+          Download my{" "}
+          <a
+            href={config.resumeLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Resume
+          </a>
+        </h4>
       </div>
       <ul className={styles.links}>
         <li className={styles.link}>
-          <a href="mailto:yash.nayan.04@gmail.com">
+          <a href={`mailto:${config.email}`}>
             <img src={getImageUrl("contact/emailIcon.png")} alt="Email icon" />
           </a>
         </li>
         <li className={styles.link}>
-          <a href="https://www.linkedin.com/in/yash-nayan-631318250/">
+          <a
+            href={config.socials.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img
               src={getImageUrl("contact/linkedinIcon.png")}
               alt="LinkedIn icon"
@@ -26,7 +40,11 @@ export const Contact = () => {
           </a>
         </li>
         <li className={styles.link}>
-          <a href="https://github.com/yashnayan8795">
+          <a
+            href={config.socials.github}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={getImageUrl("contact/githubIcon.png")} alt="Github icon" />
           </a>
         </li>

@@ -1,0 +1,61 @@
+pipeline {
+    agent any
+
+    tools {
+        nodejs "node" // This should match your Jenkins Global Tool Configuration name for Node.js
+    }
+
+    environment {
+        CI = 'true'
+    }
+
+    stages {
+        stage('Cleanup') {
+            steps {
+                echo 'Cleaning up previous builds...'
+                deleteDir()
+                checkout scm
+            }
+        }
+
+        stage('Install Dependencies') {
+            steps {
+                echo 'Installing dependencies...'
+                sh 'npm install'
+            }
+        }
+
+        stage('Lint') {
+            steps {
+                echo 'Running linter...'
+                sh 'npm run lint'
+            }
+        }
+
+        stage('Build') {
+            steps {
+                echo 'Building the project...'
+                sh 'npm run build'
+            }
+        }
+
+        stage('Archive Artifacts') {
+            steps {
+                echo 'Archiving build artifacts...'
+                archiveArtifacts artifacts: 'dist/**', fingerprint: true
+            }
+        }
+    }
+
+    post {
+        always {
+            echo 'Pipeline finished.'
+        }
+        success {
+            echo 'Build successful! Ready for deployment.'
+        }
+        failure {
+            echo 'Build failed. Please check the logs.'
+        }
+    }
+}

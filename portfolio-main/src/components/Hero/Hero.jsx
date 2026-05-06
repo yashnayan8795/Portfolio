@@ -1,28 +1,33 @@
 import React from "react";
-
+import { motion } from "framer-motion";
 import styles from "./Hero.module.css";
 import { getImageUrl } from "../../utils";
+import config from "../../data/config.json";
 
 export const Hero = () => {
   return (
     <section className={styles.container}>
-      <div className={styles.content}>
-        <h1 className={styles.title}>Hi, I'm Yash</h1>
+      <motion.div 
+        className={styles.content}
+        initial={{ opacity: 0, x: -50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
+        <h1 className={styles.title}>Hi, I'm {config.name.split(" ")[0]}</h1>
         <p className={styles.description}>
-        I'm an aspiring Full-Stack developer who has a passion for designing 
-        user-friendly and eye-catching web and mobile experiences.
-        capable of creating dynamic, responsive websites and mobile 
-        applications using new technologies like ReactJS, VueJs, 
-        React Native and NextJS.
+          {config.description}
         </p>
-        <a href="mailto:yash.nayan.04@gmail.com" className={styles.contactBtn}>
+        <a href={`mailto:${config.email}`} className={styles.contactBtn}>
           Contact Me
         </a>
-      </div>
-      <img
+      </motion.div>
+      <motion.img
         src={getImageUrl("hero/dp.jpg")}
-        alt="image of me"
+        alt={`Profile picture of ${config.name}`}
         className={styles.heroImg}
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8, delay: 0.2 }}
       />
       <div className={styles.topBlur} />
       <div className={styles.bottomBlur} />
