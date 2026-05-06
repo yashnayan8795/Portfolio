@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     tools {
-        nodejs "node" // Must match name in Jenkins > Global Tool Configuration
+        nodejs "node"
     }
 
     environment {
@@ -11,6 +11,7 @@ pipeline {
     }
 
     stages {
+
         stage('Checkout') {
             steps {
                 echo 'Checking out source code...'
@@ -22,7 +23,7 @@ pipeline {
             steps {
                 echo 'Installing dependencies...'
                 dir("${APP_DIR}") {
-                    sh 'npm install'
+                    bat 'npm install'
                 }
             }
         }
@@ -31,7 +32,7 @@ pipeline {
             steps {
                 echo 'Running linter...'
                 dir("${APP_DIR}") {
-                    sh 'npm run lint'
+                    bat 'npm run lint'
                 }
             }
         }
@@ -40,7 +41,7 @@ pipeline {
             steps {
                 echo 'Building the project...'
                 dir("${APP_DIR}") {
-                    sh 'npm run build'
+                    bat 'npm run build'
                 }
             }
         }
@@ -57,9 +58,11 @@ pipeline {
         always {
             echo 'Pipeline finished.'
         }
+
         success {
             echo 'Build successful! Ready for deployment.'
         }
+
         failure {
             echo 'Build failed. Please check the logs.'
         }
