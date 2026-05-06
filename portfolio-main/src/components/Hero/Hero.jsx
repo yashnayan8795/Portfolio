@@ -1,4 +1,4 @@
-import React from "react";
+
 import { motion } from "framer-motion";
 import styles from "./Hero.module.css";
 import { getImageUrl } from "../../utils";
@@ -13,7 +13,7 @@ export const Hero = () => {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
-        <h1 className={styles.title}>Hi, I'm {config.name.split(" ")[0]}</h1>
+        <h1 className={styles.title}>{"Hi, I'm "}{config.name.split(" ")[0]}</h1>
         <p className={styles.description}>
           {config.description}
         </p>
